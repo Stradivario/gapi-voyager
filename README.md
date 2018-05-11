@@ -8,10 +8,10 @@
 ##### To install this Gapi module, run:
 
 ```bash
-$ npm install @gapi/gapi-voyager --save
+$ npm install @gapi/voyager --save
 ```
 
-## Consuming gapi-voyager
+## Consuming @gapi/voyager
 
 Without configuration
 
@@ -19,7 +19,7 @@ Without configuration
 ```typescript
 
 import { GapiModule } from '@gapi/core';
-import { GapiVoyagerModule } from 'gapi-voyager';
+import { GapiVoyagerModule } from '@gapi/voyager';
 
 @GapiModule({
     imports: [
@@ -35,7 +35,7 @@ With configuration
 ```typescript
 
 import { GapiModule } from '@gapi/core';
-import { GapiVoyagerModule } from 'gapi-voyager';
+import { GapiVoyagerModule } from '@gapi/voyager';
 
 @GapiModule({
     imports: [
