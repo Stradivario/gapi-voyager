@@ -1,7 +1,7 @@
-import { GapiModuleWithServices } from "@gapi/core";
-import { GapiVoyagerConfig } from './gapi-voyager-config';
-export declare class GapiVoyagerModule {
-    static forRoot(config?: GapiVoyagerConfig): GapiModuleWithServices;
+import { ModuleWithServices } from "@rxdi/core";
+import { VoyagerConfigModel } from './voyager-config';
+export declare class VoyagerModule {
+    static forRoot(config?: VoyagerConfigModel): ModuleWithServices;
 }
-export * from './gapi-voyager-plugin';
-export * from './gapi-voyager-config';
+export * from './voyager-plugin';
+export * from './voyager-config';

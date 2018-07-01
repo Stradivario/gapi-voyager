@@ -18,12 +18,12 @@ Without configuration
 ##### Import inside AppModule or CoreModule
 ```typescript
 
-import { GapiModule } from '@gapi/core';
-import { GapiVoyagerModule } from '@gapi/voyager';
+import { Module } from '@rxdi/core';
+import { VoyagerModule } from '@gapi/voyager';
 
-@GapiModule({
+@Module({
     imports: [
-        GapiVoyagerModule
+        VoyagerModule
     ]
 })
 export class CoreModule { }
@@ -34,12 +34,12 @@ With configuration
 ##### Import inside AppModule or CoreModule
 ```typescript
 
-import { GapiModule } from '@gapi/core';
-import { GapiVoyagerModule } from '@gapi/voyager';
+import { Module } from '@rxdi/core';
+import { VoyagerModule } from '@gapi/voyager';
 
-@GapiModule({
+@Module({
     imports: [
-        GapiVoyagerModule.forRoot({
+        VoyagerModule.forRoot({
             path: '/voyager';
             endpointUrl: '/graphql';
         })

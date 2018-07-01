@@ -1,18 +1,21 @@
-import { GapiModule, GapiModuleWithServices } from "@gapi/core";
-import { GapiVoyagerConfig } from './gapi-voyager-config';
-import { VoyagerGapiHapiPlugin } from './gapi-voyager-plugin';
+import { Module, ModuleWithServices } from "@rxdi/core";
+import { VoyagerConfig, VoyagerConfigModel } from './voyager-config';
+import { VoyagerGapiHapiPlugin } from './voyager-plugin';
 
-@GapiModule({
-    services: [GapiVoyagerConfig],
+@Module({
+    services: [{
+        provide: VoyagerConfig,
+        useValue: new VoyagerConfigModel()
+    }],
     plugins: [VoyagerGapiHapiPlugin]
 })
-export class GapiVoyagerModule {
-    static forRoot(config?: GapiVoyagerConfig): GapiModuleWithServices {
+export class VoyagerModule {
+    static forRoot(config?: VoyagerConfigModel): ModuleWithServices {
         return {
-            gapiModule: GapiVoyagerModule,
+            module: VoyagerModule,
             services: [
                 {
-                    provide: GapiVoyagerConfig,
+                    provide: VoyagerConfig,
                     useValue: config
                 }
             ]
@@ -20,5 +23,5 @@ export class GapiVoyagerModule {
     }
 }
 
-export * from './gapi-voyager-plugin';
-export * from './gapi-voyager-config';
+export * from './voyager-plugin';
+export * from './voyager-config';
