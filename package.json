@@ -25,15 +25,15 @@
   "module": "index.js",
   "typings": "index.d.ts",
   "peerDependencies": {
-    "@rxdi/core": "^0.0.185",
-    "@rxdi/hapi": "^0.0.185"
+    "@rxdi/core": "^0.0.207",
+    "@rxdi/hapi": "^0.0.207"
   },
   "dependencies": {
     "graphql-voyager": "^1.0.0-rc.15"
   },
   "devDependencies": {
-    "@rxdi/core": "^0.0.185",
-    "@rxdi/hapi": "^0.0.185",
+    "@rxdi/core": "^0.0.207",
+    "@rxdi/hapi": "^0.0.207",
     "@types/hapi": "^17.0.13",
     "@types/node": "^10.3.4",
     "hapi": "^17.5.2"
