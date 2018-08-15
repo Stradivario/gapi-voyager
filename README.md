@@ -13,24 +13,6 @@ $ npm install @gapi/voyager --save
 
 ## Consuming @gapi/voyager
 
-Without configuration
-
-##### Import inside AppModule or CoreModule
-```typescript
-
-import { Module } from '@rxdi/core';
-import { VoyagerModule } from '@gapi/voyager';
-
-@Module({
-    imports: [
-        VoyagerModule
-    ]
-})
-export class CoreModule { }
-```
-
-With configuration
-
 ##### Import inside AppModule or CoreModule
 ```typescript
 

@@ -9,6 +9,7 @@ function __export(m) {
     for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
 }
 Object.defineProperty(exports, "__esModule", { value: true });
+var VoyagerModule_1;
 const core_1 = require("@rxdi/core");
 const voyager_config_1 = require("./voyager-config");
 const voyager_plugin_1 = require("./voyager-plugin");
@@ -27,14 +28,9 @@ let VoyagerModule = VoyagerModule_1 = class VoyagerModule {
 };
 VoyagerModule = VoyagerModule_1 = __decorate([
     core_1.Module({
-        services: [{
-                provide: voyager_config_1.VoyagerConfig,
-                useValue: new voyager_config_1.VoyagerConfigModel()
-            }],
         plugins: [voyager_plugin_1.VoyagerGapiHapiPlugin]
     })
 ], VoyagerModule);
 exports.VoyagerModule = VoyagerModule;
 __export(require("./voyager-plugin"));
 __export(require("./voyager-config"));
-var VoyagerModule_1;
