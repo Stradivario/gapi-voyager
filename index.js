@@ -14,7 +14,7 @@ const core_1 = require("@rxdi/core");
 const voyager_config_1 = require("./voyager-config");
 const voyager_plugin_1 = require("./voyager-plugin");
 let VoyagerModule = VoyagerModule_1 = class VoyagerModule {
-    static forRoot(config) {
+    static forRoot(config = new voyager_config_1.VoyagerConfigModel()) {
         return {
             module: VoyagerModule_1,
             services: [
