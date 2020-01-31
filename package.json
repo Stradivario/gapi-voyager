@@ -28,7 +28,7 @@
     "graphql-voyager": "^1.0.0-rc.15"
   },
   "devDependencies": {
-    "@rxdi/core": "0.7.37",
+    "@rxdi/core": "0.7.41",
     "@rxdi/hapi": "0.7.37",
     "@types/hapi": "^17.0.13",
     "@types/node": "^10.3.4",
